@@ -1,4 +1,4 @@
-package ru.arab.lessons.lessons07
+package ru.arab.lessons.lessons07.homeworks
 
 // Напишите цикл for, который выводит числа от 1 до 5.
 fun forwardRange1() {
