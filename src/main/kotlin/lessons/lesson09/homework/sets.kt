@@ -44,18 +44,18 @@ fun arrayEx() {
 
 
 //Создайте массив целых чисел. Найдите индекс элемента со значением 5. Если значения 5 нет в массиве, печатаем -1. Реши задачу через цикл while.
-//    val a10: Array<Int> = arrayOf(5,2,4,4,6,6,6,6,6,5)
-//    var counter = 0
-//    while (counter != a10.lastIndex){
-//        if (a10[counter] == 5 ) {
-//            println(counter)
-//            return
-//        } else if (counter == a10.lastIndex) {
-//            println("-1")
-//            return
-//        } else
-//        counter++
-//    }
+    val a10: Array<Int> = arrayOf(5,2,4,4,6,6,6,6,6,5)
+    var counter = 0
+    while (counter != a10.lastIndex){
+        if (a10[counter] == 5 ) {
+            println(counter)
+            return
+        } else if (counter == a10.lastIndex) {
+            println("-1")
+            return
+        } else
+        counter++
+    }
 //Создайте массив целых чисел. Используйте цикл для перебора массива и вывода каждого элемента в консоль. Напротив каждого элемента должно быть написано “чётное” или “нечётное”.
     val a11: Array<Int> = arrayOf(1, 2, 3, 4, 5)
     for (i in a11.indices) {

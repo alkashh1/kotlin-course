@@ -1,4 +1,4 @@
-//package ru.arab.lessons.lessons03
+package ru.arab.lessons.lessons03
 //
 //fun main() {
 //

@@ -12,7 +12,6 @@ fun main() {
     string5("D:/good.themes/dracula.theme")
     string6("Котлин лучший язык программирования")
     string7("Котлин лучший язык программирования")
-//    string8("Kotlin")
 }
 // Преобразование строк
 fun string1(arg: String) {
