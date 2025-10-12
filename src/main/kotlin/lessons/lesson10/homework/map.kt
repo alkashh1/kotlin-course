@@ -52,13 +52,14 @@ fun map() {
     a10?.add("smth3")
     println(a9)
 //Создай словарь, где ключами будут пары чисел. Через перебор найди значение у которого пара будет содержать цифру 5 в качестве первого или второго значения.
-    val a11 = mapOf(1 to 2, 3 to 4, 5 to 6, 6 to 5)
-    for ((a, b) in a11) {
-        if (a == 5) {
-            println("${a11[a]}->$a,$b")
-        } else if (b == 5) {
-            println("${a11[a]}->$a,$b")
-        }
+    val a11 = mapOf(
+        Pair (1,2) to 11,
+        Pair (2,3) to 22,
+        Pair (5,5) to 5,
+        Pair (3,5) to 33,
+        Pair (4,6) to 44)
+    for ((pair, value) in a11) {
+        if (pair.first ==5 || pair.second ==5) println("key $pair -› value $value")
     }
 }
 
