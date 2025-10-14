@@ -1,36 +1,36 @@
 package ru.arab.lessons.lesson11.homework
 
 fun main() {
-//    print("a1: ")
-//    println(a1())
-//    print("a2: ")
-//    println(a2(1,2))
-//    print("a3: ")
-//    println(a3("bb"))
-//    print("a4: ")
-//    println(a4(listOf(1,2,3,4,5)))
-//    print("a5: ")
-//    println(a5("null"))
-//    print("a6: ")
-//    println(a6())
-//    print("a7: ")
-//    println(a7(listOf(1,2,3,null,4,5)))
-//    print("a8: ")
-//    println(a8(1))
-//    print("a9: ")
-//    println(a9(1))
-//    print("a10: ")
-//    println(a10("ds",1))
-//    print("multiplyByTwo: ")
-//    println(multiplyByTwo(2))
-//    print("isEven: True -> ")
-//    print(isEven(2))
-//    print(" False -> ")
-//    println(isEven(3))
-//    print("printNumbersUntil: ")
-//    println(printNumbersUntil(0))
-//    print("findFirstNegative: ")
-//    println(findFirstNegative(listOf(1,2,3,2)))
+    print("a1: ")
+    println(a1())
+    print("a2: ")
+    println(a2(1,2))
+    print("a3: ")
+    println(a3("bb"))
+    print("a4: ")
+    println(a4(listOf(1,2,3,4,5)))
+    print("a5: ")
+    println(a5("null"))
+    print("a6: ")
+    println(a6())
+    print("a7: ")
+    println(a7(listOf(1,2,3,4,5)))
+    print("a8: ")
+    println(a8(1))
+    print("a9: ")
+    println(a9())
+    print("a10: ")
+    println(a10("ds",1))
+    print("multiplyByTwo: ")
+    println(multiplyByTwo(2))
+    print("isEven: True -> ")
+    print(isEven(2))
+    print(" False -> ")
+    println(isEven(3))
+    print("printNumbersUntil: ")
+    println(printNumbersUntil(0))
+    print("findFirstNegative: ")
+    println(findFirstNegative(listOf(1,2,3,2)))
     print("processList: ")
     println(processList(listOf("nn", "bb", null, "yhy")))
     println()
@@ -72,7 +72,7 @@ fun a6(): Double? {
 }
 
 //Принимает nullable список целых чисел, не возвращает значения и доступна только в текущем файле.
-private fun a7(a: List<Int?>) {}
+private fun a7(a: List<Int>?) {}
 
 //Принимает целое число и возвращает nullable строку.
 fun a8(a: Int): String? {
@@ -80,7 +80,7 @@ fun a8(a: Int): String? {
 }
 
 //Не принимает аргументов и возвращает список nullable строк.
-fun a9(a: Int): List<String?> {
+fun a9(): List<String?> {
     return listOf()
 }
 
@@ -99,25 +99,23 @@ fun multiplyByTwo(a: Int): Int {
 
 //Создайте функцию isEven, которая принимает целое число и возвращает true, если число чётное, и false в противном случае.
 fun isEven(a: Int): Boolean {
-    if (a % 2 == 0) {
-        return true
-    } else {
-        return false
-    }
+//    if (a % 2 == 0) {
+//        return true
+//    } else {
+//        return false
+//    }
+    return (a % 2 == 0)
 }
 
 //Напишите функцию printNumbersUntil, которая принимает целое число n и выводит на экран числа от 1 до n.
 // Если число n меньше 1, функция должна прекратить выполнение с помощью return без вывода сообщений.
-fun printNumbersUntil(n: Int): MutableList<Int> {
-    val a = mutableListOf<Int>()
+fun printNumbersUntil(n: Int) {
     if (n < 1) {
-        return a
-    } else {
-        for (i in 1..n) {
-            a.add(i)
-        }
+        return
     }
-    return a
+    for (i in 1..n) {
+        println(i)
+    }
 }
 
 //Создайте функцию findFirstNegative, которая принимает список целых чисел и возвращает первое отрицательное число в списке.
@@ -138,9 +136,6 @@ fun processList(a: List<String?>) {
         if (i == null) {
             return
         }
-    }
-    for (i in a) {
         println(i)
     }
-
 }
